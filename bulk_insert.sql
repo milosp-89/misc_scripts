@@ -13,8 +13,6 @@ go
 
 ----
 
--- more detailed script
-
 BEGIN TRANSACTION;
 
 USE [xxx];
@@ -40,11 +38,11 @@ BULK INSERT tbl_name
 	KEEPNULLS);
 go
 
-	--UPDATE existing table with diferent data types, from varchar(max) to int,char, decimal...--
+--UPDATE existing table with diferent data types, from varchar(max) to int,char, decimal...--
 
-	--CREATE new table with exactly specified data types, same as for above changes--
+--CREATE new table with exactly specified data types, same as for above changes--
 
-	--if new column is going to have identity(1,1) primary key then:--
+--if new column is going to have identity(1,1) primary key then:--
 
 SET IDENTITY_newtablename ON;
 go
